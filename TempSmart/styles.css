@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #072046; /* Dark Blue Background Color */
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    background: linear-gradient(to bottom, #1a4383, #3766b5); /* Blue Gradient */
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 24px;
+}
+
+button {
+    background-color: #4285f4; /* Medium Blue */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #65a4ff; /* Light Blue on Hover */
+}
+
+button:active {
+    outline: none;
+    box-shadow: 0px 0px 10px rgba(101, 164, 255, 0.8); /* Light Blue Glow Effect on Press */
+}
+
+/* Toggle Switch Styles */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 120px;
+    height: 34px;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #4285f4; /* Medium Blue */
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #65a4ff; /* Light Blue Checked Color */
+}
+
+input:checked + .slider:before {
+    transform: translateX(85px);
+}
+
+/* ... (other styles remain unchanged) */
+
+@media screen and (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+}
